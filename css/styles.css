@@ -1,0 +1,338 @@
+:root {
+  --primary-text-color: #434455;
+  --secondary-text-color: #2e2f42;
+  --dark-bg: #2e2f42;
+  --light-bg: #f4f4fd;
+  --main-blue: #4d5ae5;
+  --border-textfooter: #e7e9fc;
+  --active-blue: #404bbf;
+  --light-text: #ffffff;
+}
+.hidden {
+  display: none;
+}
+
+/* Function */
+
+body {
+  font-family: Roboto, sans-serif;
+  color: var(--primary-text-color);
+}
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+.container {
+  width: 1158px;
+  padding: 0px 15px;
+  margin: 0 auto;
+}
+.list {
+  list-style: none;
+}
+.link {
+  font-style: normal;
+  text-decoration: none;
+  display: block;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.menu .link:hover,
+.menu .link:focus {
+  color: var(--active-blue);
+}
+.address-menu .link:hover,
+.address-menu .link:focus {
+  color: var(--active-blue);
+}
+.menu .link.current {
+  color: var(--active-blue);
+}
+.nav-btns-list .nav-btn:hover,
+.nav-btns-list .nav-btn:focus {
+  background-color: var(--active-blue);
+  color: var(--light-text);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+}
+.head-section .main-btn:hover,
+.head-section .main-btn:focus {
+  background-color: var(--active-blue);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+/* header */
+
+.logo-blue {
+  color: var(--main-blue);
+}
+.main-logo {
+  font-family: Raleway, sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.33;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+
+  margin-right: 76px;
+}
+.page-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid;
+  border-color: var(--border-textfooter);
+}
+.menu {
+  display: flex;
+}
+.address-menu {
+  display: flex;
+}
+.page-nav {
+  display: flex;
+}
+.menu-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+.menu-item:not(:last-child) {
+  margin-right: 40px;
+}
+.address-item:not(:last-child) {
+  margin-right: 40px;
+}
+.address-link {
+  font-style: normal;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--primary-text-color);
+}
+
+/* Main Section */
+.head-section {
+  text-align: center;
+}
+.dark-bgc {
+  background-color: var(--dark-bg);
+  margin: 0 auto;
+}
+.section-hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+.main-head {
+  font-size: 56px;
+  line-height: 1.1;
+
+  letter-spacing: 0.02em;
+  color: var(--light-text);
+  margin-bottom: 48px;
+}
+.main-btn {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: var(--light-text);
+  background-color: var(--main-blue);
+  border-radius: 4px;
+  padding: 16px 32px;
+}
+
+/*  ABOUT WEBSTUDIO SECTION */
+
+.examples-list {
+  display: flex;
+  /* margin-left: -24px;
+  margin-top: -24px; */
+}
+.examples-list-item {
+  flex-basis: calc((100% - 72px) / 4);
+  margin-right: 24px;
+  /* flex-basis: calc(100% / 4 -24px);
+  margin-left: 24px;
+  margin-top: 24px; */
+}
+.examples-list-item:nth-child(4n) {
+  margin-right: 0;
+}
+.examples-list-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+.examples-list-descr {
+  margin-top: 8px;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+.section-head {
+  font-size: 36px;
+  line-height: 1.1;
+  text-align: center;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+}
+
+/* WHAT ARE WE DOIG */
+.section-bottom-padding {
+  padding-bottom: 120px;
+}
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.head-margin {
+  margin-bottom: 72px;
+}
+.img-list {
+  display: flex;
+}
+.image-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+
+/*  OUR TEAM */
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+.light-bgc {
+  margin: 0 auto;
+  background-color: var(--light-bg);
+}
+.team-head {
+  margin-bottom: 72px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: center;
+}
+.team-list-item:not(:last-child) {
+  margin-right: 24px;
+}
+.team-list-item {
+  background-color: #ffffff;
+}
+
+.team-list-head {
+  text-align: center;
+  margin-bottom: 8px;
+}
+.team-list-descr {
+  text-align: center;
+}
+.padding-descr {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  border: 1px solid;
+  border-color: var(--border-textfooter);
+  border-top: 0;
+}
+/* Portfolio */
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.nav-btns-list {
+  display: flex;
+  justify-content: center;
+}
+.nav-btns-item:not(:last-child) {
+  margin-right: 24px;
+}
+.nav-btn {
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: var(--main-blue);
+  background-color: var(--light-bg);
+  border: 1px solid var(--border-textfooter);
+  border-radius: 4px;
+
+  padding: 12px 24px;
+}
+
+.portfolio-list {
+  margin-top: 72px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.portfolio-list-item {
+  margin-right: 24px;
+  margin-bottom: 48px;
+}
+.portfolio-list-item:nth-child(3n) {
+  margin-right: 0;
+}
+.portfolio-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
+}
+.portfolio-list-head {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--secondary-text-color);
+  margin-bottom: 8px;
+}
+.portfolio-list-descr {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+/* Footer */
+.foot-section {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+.dark-bgc-foot {
+  background: var(--dark-bg);
+  margin: 0 auto;
+}
+.footer-descr {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--border-textfooter);
+  width: 264px;
+  margin-top: 16px;
+}
+.foot-link {
+  font-style: normal;
+  text-decoration: none;
+  color: var(--light-bg);
+  width: 115px;
+}
