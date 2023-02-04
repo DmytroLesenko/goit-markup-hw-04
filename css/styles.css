@@ -208,6 +208,29 @@ img {
   letter-spacing: 0.02em;
   color: var(--secondary-text-color);
 }
+.examples-list-item::before {
+  content: "";
+  display: block;
+  background-size: 64px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--light-bg);
+  height: 112px;
+  width: 264px;
+  margin-bottom: 8px;
+}
+.antenna-icon::before {
+  background-image: url(../images/antenna.svg);
+}
+.clock-icon::before {
+  background-image: url(../images/clock.svg);
+}
+.diagram-icon::before {
+  background-image: url(../images/diagram.svg);
+}
+.astronaut-icon::before {
+  background-image: url(../images/astronaut.svg);
+}
 .examples-list-descr {
   margin-top: 8px;
   font-size: 16px;
