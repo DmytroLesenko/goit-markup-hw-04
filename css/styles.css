@@ -474,3 +474,7 @@ img {
 .logo-container {
   margin-right: 120px;
 }
+.svg-button {
+  width: 100px;
+  height: 100px;
+}
